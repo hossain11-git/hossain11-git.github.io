@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasviq Hossain - Waterloo Computer Engineer</title>
+  <title>Tasviq - Waterloo Computer Engineer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -41,7 +41,7 @@
 
     section {
       padding: 50px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
@@ -107,38 +107,97 @@
     form button:hover {
       background-color: #218838;
     }
+
+    .projects, .skills, .testimonials, .contact {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .projects h3, .skills h3, .testimonials h3, .contact h3 {
+      margin-top: 0;
+      color: #0072ce;
+    }
+
+    .project-list, .skill-list, .testimonial-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .project-list li, .skill-list li, .testimonial-list li {
+      margin-bottom: 10px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-list li {
+      background-color: #0072ce;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Headshot Placeholder -->
     <img src="bridge.jpg" alt="Tasviq headshot">
-
-    <!-- Headline & Subheadline -->
     <h1>Tasviq Hossain</h1>
-    <h2>Waterloo Computer Engineering</h2>
-
-    <!-- Short Bio -->
+    <h2>Waterloo Computer Engineer</h2>
     <p>
-      Tasviq is a computer engineering student at the University of Waterloo who programs and designs systems to solve the biggest technological problems. Some even say he perfectly blends problem-solving and technology. Tasviq's strategies come from his many years of experience: over 5 years creating software solutions, more than 4 years developing C++ code, and over 1 year of robotics engineering.
+      Tasviq Hossain is a computer engineering student at the University of Waterloo who programs and designs systems to solve the biggest technological problems. Some even say he perfectly blends problem-solving and technology. Tasviq's strategies come from his many years of experience: over 5 years creating software solutions, more than 4 years developing C++ code, and over 1 year of robotics engineering.
     </p>
   </header>
 
-  <!-- Placeholder Sections -->
-<section class="trust-logos">
-  <img src="cpp.png" alt="C++ logo">
-  <img src="python.png" alt="Python logo">
-  <img src="mysql.png" alt="MySQL logo">
-  <img src="rpi.png" alt="Raspberry Pi logo">
-</section>
+  <section class="trust-logos">
+    <img src="cpp.png" alt="C++ logo">
+    <img src="python.png" alt="Python logo">
+    <img src="mysql.png" alt="MySQL logo">
+    <img src="rpi.png" alt="Raspberry Pi logo">
+  </section>
+
+  <section class="projects">
+    <h3>Projects</h3>
+    <ul class="project-list">
+      <li>Robotics control system for autonomous vehicles</li>
+      <li>C++ software tool for data analysis</li>
+      <li>Web-based portfolio management system</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h3>Technical Skills</h3>
+    <ul class="skill-list">
+      <li>C++</li>
+      <li>Python</li>
+      <li>MySQL</li>
+      <li>Embedded Systems</li>
+      <li>Robotics Engineering</li>
+      <li>Web Development</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h3>Testimonials</h3>
+    <ul class="testimonial-list">
+      <li>"Tasviq's problem-solving skills are unmatched." – Professor A</li>
+      <li>"Excellent approach to complex engineering challenges." – Team Lead B</li>
+      <li>"Reliable and innovative in every project." – Colleague C</li>
+    </ul>
+  </section>
 
   <section class="cta">
     <p>Interested in collaborating or discussing opportunities?</p>
     <button type="button">Schedule a call</button>
   </section>
 
-  <section>
-    <h2>Subscribe to Updates</h2>
+  <section class="contact">
+    <h3>Subscribe to Updates</h3>
     <form>
       <label for="email">Email Address:</label>
       <input type="email" id="email" name="email" placeholder="you@example.com" required>
